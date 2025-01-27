@@ -1,7 +1,5 @@
-
 import 'dart:typed_data';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../shared/widgets/responsive_widget.dart';
@@ -32,7 +30,11 @@ class GalleryItem extends StatelessWidget {
                 Container(
                   alignment: Alignment.center,
                   height: constraints.minHeight * 0.7,
-                  child: Image.memory(image, fit: BoxFit.cover,),
+                  child: Image.memory(
+                    image,
+                    fit: BoxFit.cover,
+                    width: constraints.maxWidth,
+                  ),
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(

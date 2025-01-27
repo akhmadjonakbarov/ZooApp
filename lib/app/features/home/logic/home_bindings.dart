@@ -5,7 +5,7 @@ import 'package:zoo_app/app/shared/logics/note_controller.dart';
 class HomeBindings extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => ZooController());
-    Get.lazyPut(() => NoteController());
+    Get.put(ZooController());
+    Get.put(NoteController());
   }
 }

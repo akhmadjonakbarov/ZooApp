@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:zoo_app/app/ui/text_styles.dart';
 
 import '../../../shared/widgets/custom_scaffold.dart';
 import '../../../shared/widgets/responsive_widget.dart';
-import '../../../ui/app_colors.dart';
+import '../../../ui/text_styles.dart';
+
 
 class AnimalDetailScreen extends StatelessWidget {
   const AnimalDetailScreen({super.key});

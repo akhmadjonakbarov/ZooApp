@@ -3,14 +3,13 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:zoo_app/app/core/screens.dart';
 
-import 'package:zoo_app/app/shared/logics/note_controller.dart';
-import 'package:zoo_app/app/shared/widgets/buttons.dart';
-import 'package:zoo_app/app/shared/widgets/headers.dart';
-import 'package:zoo_app/app/ui/app_colors.dart';
 
+import '../../../core/screens.dart';
+import '../../../shared/logics/note_controller.dart';
+import '../../../shared/widgets/buttons.dart';
 import '../../../shared/widgets/custom_scaffold.dart';
+import '../../../shared/widgets/headers.dart';
 import '../../../shared/widgets/responsive_widget.dart';
 import '../../note/models/note.dart';
 import 'widgets/gallery_item.dart';
