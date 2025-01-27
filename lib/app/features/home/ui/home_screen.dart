@@ -24,6 +24,10 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 BasicButton(
+                  onClick: () => Get.toNamed(Screens.animals),
+                  title: "Learn More",
+                ),
+                BasicButton(
                   onClick: () {
                     Get.toNamed(Screens.findZoo);
                   },
@@ -34,6 +38,10 @@ class HomeScreen extends StatelessWidget {
                     Get.toNamed(Screens.myGallery);
                   },
                   title: "My Gallery",
+                ),
+                BasicButton(
+                  onClick: () => Get.toNamed(Screens.about),
+                  title: "About",
                 )
               ],
             ),
