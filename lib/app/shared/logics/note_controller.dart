@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
-import 'package:zoo_app/app/core/data_storage.dart';
-import 'package:zoo_app/app/features/note/models/note.dart';
+
+import '../../core/data_storage.dart';
+import '../../features/note/models/note.dart';
+
 
 class NoteController extends GetxController {
   var notes = <Note>[].obs;
