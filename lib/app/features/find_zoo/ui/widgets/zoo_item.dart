@@ -16,7 +16,7 @@ class ZooItem extends StatelessWidget {
         padding: EdgeInsets.all(8),
         height: height / 7,
         decoration: BoxDecoration(
-            color: AppColors.zoo_back, borderRadius: BorderRadius.circular(10)),
+            color: AppColors.zooBack, borderRadius: BorderRadius.circular(10)),
         child: Row(
           children: [
             Container(

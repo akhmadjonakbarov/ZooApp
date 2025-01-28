@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:dotted_border/dotted_border.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -16,10 +16,10 @@ class ImageBox extends StatelessWidget {
 
   const ImageBox(
       {super.key,
-        required this.onClick,
-        required this.height,
-        required this.width,
-        required this.imagePath});
+      required this.onClick,
+      required this.height,
+      required this.width,
+      required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -38,27 +38,27 @@ class ImageBox extends StatelessWidget {
             width: width * 0.26,
             child: imagePath.isEmpty
                 ? Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SvgPicture.asset(
-                  "assets/svgs/image.svg",
-                ),
-                SizedBox(
-                  height: height * 0.1 / 25,
-                ),
-                Text(
-                  "Add image",
-                  style: GilroyTextStyle.style(
-                      color: AppColors.umber, size: height / 75),
-                )
-              ],
-            )
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        "assets/svgs/image.svg",
+                      ),
+                      SizedBox(
+                        height: height * 0.1 / 25,
+                      ),
+                      Text(
+                        "Add image",
+                        style: GilroyTextStyle.style(
+                            color: AppColors.umber, size: height / 75),
+                      )
+                    ],
+                  )
                 : Image.file(
-              File(imagePath),
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-            ),
+                    File(imagePath),
+                    fit: BoxFit.cover,
+                    filterQuality: FilterQuality.high,
+                  ),
           ),
         ),
       ),

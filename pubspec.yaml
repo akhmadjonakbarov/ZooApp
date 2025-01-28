@@ -43,6 +43,7 @@ dependencies:
   dotted_border: ^2.1.0
   file_picker: ^8.1.7
   dio: ^5.7.0
+  cached_network_image: ^3.4.1
 
 
 dev_dependencies:

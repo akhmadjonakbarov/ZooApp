@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../shared/widgets/custom_scaffold.dart';
 import '../../../shared/widgets/responsive_widget.dart';
 import '../../../ui/text_styles.dart';
-
+import '../models/animal.dart';
 
 class AnimalDetailScreen extends StatelessWidget {
   const AnimalDetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Animal animal = Get.arguments as Animal;
     return CustomScaffold(
       padding: EdgeInsets.zero,
       body: ResponsiveWidget(
@@ -34,7 +36,7 @@ class AnimalDetailScreen extends StatelessWidget {
                 children: [
                   RichText(
                     text: TextSpan(
-                      text: "Bengal Tiger",
+                      text: animal.title,
                       style: GilroyTextStyle.style(
                         weight: FontWeight.bold,
                         size: height / 32,
@@ -48,7 +50,7 @@ class AnimalDetailScreen extends StatelessWidget {
                             ),
                             width: width / 1.8,
                             child: Text(
-                              "Lorem ipsum dolor sit amet consectetur. Nulla ipsum rhoncus adipiscing orci viverra cursus orci eu. ",
+                              animal.description,
                               style: GilroyTextStyle.style(
                                 size: height / 75,
                                 weight: FontWeight.w300,

@@ -9,7 +9,7 @@ class AppColors {
   static const yellow = Color(0xFFFFEE00);
   static const umber = Color(0xFF723216);
   static const searchBar = Color(0xffD6A483);
-  static const zoo_back = Color(0xFFC18C6C);
+  static const zooBack = Color(0xFFC18C6C);
   static const grey = Color(0xFFF0F0F0);
   static const textGrey = Color(0xFF707070);
 }
