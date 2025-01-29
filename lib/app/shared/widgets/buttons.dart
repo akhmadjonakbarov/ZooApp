@@ -43,3 +43,14 @@ class BasicButton extends StatelessWidget {
     );
   }
 }
+
+class BackButton extends StatelessWidget {
+  const BackButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Icon(Icons.arrow_back_ios),
+    );
+  }
+}

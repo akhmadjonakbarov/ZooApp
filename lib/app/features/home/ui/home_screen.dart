@@ -28,15 +28,11 @@ class HomeScreen extends StatelessWidget {
                   title: "Learn More",
                 ),
                 BasicButton(
-                  onClick: () {
-                    Get.toNamed(Screens.findZoo);
-                  },
+                  onClick: () => Get.toNamed(Screens.findZoo),
                   title: "Find Zoo",
                 ),
                 BasicButton(
-                  onClick: () {
-                    Get.toNamed(Screens.myGallery);
-                  },
+                  onClick: () => Get.toNamed(Screens.myGallery),
                   title: "My Gallery",
                 ),
                 BasicButton(

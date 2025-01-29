@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:zoo_app/app/core/screens.dart';
-import 'package:zoo_app/app/features/animal/data/data.dart';
 
+import '../../../core/screens.dart';
 import '../../../shared/widgets/custom_scaffold.dart';
 import '../../../shared/widgets/headers.dart';
 import '../../../shared/widgets/responsive_widget.dart';
 import '../../../ui/app_colors.dart';
+import '../data/data.dart';
 import '../models/animal.dart';
 import 'widgets/animal_item.dart';
 
@@ -34,8 +34,7 @@ class AnimalsScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 Animal animal = animals[index];
                 return AnimalItem(
-                  name: animal.title,
-                  imgUrl: animal.imgUrl,
+                  animal: animal,
                   onClick: () => Get.toNamed(
                     Screens.detailAnimal,
                     arguments: animal,
@@ -45,7 +44,7 @@ class AnimalsScreen extends StatelessWidget {
               separatorBuilder: (context, index) => SizedBox(
                 height: height / 95,
               ),
-              itemCount: animals.length,
+              itemCount: 2,
             )
           ],
         ),
